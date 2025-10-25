@@ -96,24 +96,24 @@ export default function Index() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="space-y-8">
+    <div className="container mx-auto px-4 py-6 sm:py-8">
+      <div className="space-y-6 sm:space-y-8">
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold">Welcome back!</h1>
-          <p className="text-muted-foreground">Here's your trading performance overview</p>
+          <h1 className="text-2xl sm:text-3xl font-bold">Welcome back!</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">Here's your trading performance overview</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-            <CardContent className="p-6">
-              <Link to="/trade-input" className="block space-y-4">
+            <CardContent className="p-4 sm:p-6">
+              <Link to="/trade-input" className="block space-y-3 sm:space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Plus className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-2 sm:p-3 rounded-lg">
+                    <Plus className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Add New Trade</h3>
-                    <p className="text-sm text-muted-foreground">Log your latest trade with screenshots</p>
+                    <h3 className="font-semibold text-sm sm:text-base">Add New Trade</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Log your latest trade with screenshots</p>
                   </div>
                 </div>
               </Link>
@@ -121,15 +121,15 @@ export default function Index() {
           </Card>
           
           <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-            <CardContent className="p-6">
-              <Link to="/analytics" className="block space-y-4">
+            <CardContent className="p-4 sm:p-6">
+              <Link to="/analytics" className="block space-y-3 sm:space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <BarChart3 className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-2 sm:p-3 rounded-lg">
+                    <BarChart3 className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">View Analytics</h3>
-                    <p className="text-sm text-muted-foreground">Analyze your trading performance</p>
+                    <h3 className="font-semibold text-sm sm:text-base">View Analytics</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Analyze your trading performance</p>
                   </div>
                 </div>
               </Link>
@@ -137,15 +137,15 @@ export default function Index() {
           </Card>
 
           <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-            <CardContent className="p-6">
-              <Link to="/dashboard" className="block space-y-4">
+            <CardContent className="p-4 sm:p-6">
+              <Link to="/dashboard" className="block space-y-3 sm:space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Sparkles className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-2 sm:p-3 rounded-lg">
+                    <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">AI Insights</h3>
-                    <p className="text-sm text-muted-foreground">Get personalized trading recommendations</p>
+                    <h3 className="font-semibold text-sm sm:text-base">AI Insights</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Get personalized trading recommendations</p>
                   </div>
                 </div>
               </Link>

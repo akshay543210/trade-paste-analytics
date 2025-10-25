@@ -139,11 +139,11 @@ export default function TradeInput() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="space-y-6">
+    <div className="container mx-auto px-4 py-6 sm:py-8 max-w-4xl">
+      <div className="space-y-4 sm:space-y-6">
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold">Add New Trade</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-2xl sm:text-3xl font-bold">Add New Trade</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">
             Record your trading data and upload screenshots for analysis
           </p>
         </div>
@@ -160,8 +160,8 @@ export default function TradeInput() {
           </CardHeader>
           <CardContent>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <FormField
                     control={form.control}
                     name="pair"
