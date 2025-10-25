@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Trading Theme - Professional Dark-First Design */
+    --background: 0 0% 98%;
+    --foreground: 228 12% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 228 12% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 12% 15%;
+
+    /* Trading Primary - Gold/Yellow accent */
+    --primary: 45 93% 58%;
+    --primary-foreground: 228 12% 15%;
+
+    --secondary: 210 14% 89%;
+    --secondary-foreground: 228 12% 15%;
+
+    --muted: 210 14% 89%;
+    --muted-foreground: 228 8% 46%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 228 12% 15%;
+
+    /* Trading Colors */
+    --success: 142 69% 58%;
+    --success-foreground: 0 0% 100%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 85%;
+    --input: 214 20% 85%;
+    --ring: 45 93% 58%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 58%), hsl(38 100% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 45%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 45%));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 228 12% 15%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 228 12% 15%;
+    --sidebar-accent: 210 14% 89%;
+    --sidebar-accent-foreground: 228 12% 15%;
+    --sidebar-border: 214 20% 85%;
+    --sidebar-ring: 45 93% 58%;
+  }
+
+  .dark {
+    /* Dark Trading Theme */
+    --background: 228 12% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 228 12% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 228 12% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 45 93% 58%;
+    --primary-foreground: 228 12% 8%;
+
+    --secondary: 228 8% 18%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 228 8% 18%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 228 12% 8%;
+
+    --success: 142 69% 58%;
+    --success-foreground: 228 12% 8%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 228 8% 18%;
+    --input: 228 8% 18%;
+    --ring: 45 93% 58%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 58%), hsl(38 100% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 69% 58%), hsl(142 69% 45%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 45%));
+
+    --sidebar-background: 228 12% 8%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 228 12% 8%;
+    --sidebar-accent: 228 8% 18%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 228 8% 18%;
+    --sidebar-ring: 45 93% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
