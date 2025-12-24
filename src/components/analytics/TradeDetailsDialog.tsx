@@ -73,11 +73,11 @@ export function TradeDetailsDialog({ trade, session, open, onOpenChange }: Trade
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Risk</p>
-              <p className="font-medium">{trade.risk ? `$${trade.risk.toFixed(2)}` : 'N/A'}</p>
+              <p className="font-medium">{trade.risk ? `${trade.risk.toFixed(2)}%` : 'N/A'}</p>
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Reward</p>
-              <p className="font-medium">{trade.reward ? `$${trade.reward.toFixed(2)}` : 'N/A'}</p>
+              <p className="font-medium">{trade.reward ? `${trade.reward.toFixed(2)}%` : 'N/A'}</p>
             </div>
           </div>
 
