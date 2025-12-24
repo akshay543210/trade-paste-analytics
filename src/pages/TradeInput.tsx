@@ -274,12 +274,14 @@ export default function TradeInput() {
                     name="risk"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Risk ($)</FormLabel>
+                        <FormLabel>Risk (%)</FormLabel>
                         <FormControl>
                           <Input 
                             type="number" 
                             step="0.01" 
-                            placeholder="100.00" 
+                            min="0"
+                            max="100"
+                            placeholder="1.00" 
                             {...field} 
                           />
                         </FormControl>
@@ -293,12 +295,13 @@ export default function TradeInput() {
                     name="reward"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Reward ($)</FormLabel>
+                        <FormLabel>Reward (%)</FormLabel>
                         <FormControl>
                           <Input 
                             type="number" 
                             step="0.01" 
-                            placeholder="200.00" 
+                            min="0"
+                            placeholder="2.00" 
                             {...field} 
                           />
                         </FormControl>
